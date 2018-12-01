@@ -1,0 +1,14 @@
+{% extends 'products/base.html' %}
+
+{% block body %}
+    <img src="{{ product.product_image}}">
+
+    <h1>{{ product.product_name }}</h1>
+    <h3>{{ product.product_price }}</h3>
+
+    <ul>
+        {% for ingredient in product.ingredient_set.all %}
+          <li>{{ ingredient.ingredient_name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

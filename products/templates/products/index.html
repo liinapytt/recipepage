@@ -1,0 +1,13 @@
+{% extends 'products/base.html' %}
+
+{% block body %}
+    {% if all_products %}
+        <ul>
+            {% for product in all_products %}
+            <li><a href="{% url 'products:detail' product.id %}">{{ product.product_name}}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}}
+    <h3>You don't have any products</h3>
+    {% endif %}
+{% endblock %}

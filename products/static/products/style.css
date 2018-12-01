@@ -1,0 +1,27 @@
+body {
+    background: #f5f5f5;
+}
+
+.navbar {
+    border-radius: 0;
+    background-color: #722f48;
+}
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+    color: white;
+}
+.navbar-brand:hover {
+    color: rgba(255,255,255,.75);
+}
+.nav-link {
+    color: rgba(255,255,255,.5);
+}
+.nav-link:hover, .nav-link:active{
+    color: rgba(255,255,255,.75);
+}
+
+.fa-cookie, .fa-user,
+.fa-plus, .fa-power-off{
+    color: rgba(255,255,255,.5);
+}
+
